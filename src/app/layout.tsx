@@ -11,7 +11,6 @@ import { AppProvider } from './provider'
 
 export const metadata: Metadata = {
   title: 'Next',
-  description: 'The Latest Next.js Starter Template (Lite Version)',
   icons: [{ rel: 'icon', url: '/favicon.ico' }],
 }
 
@@ -24,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn('font-sans antialiased', inter.variable, lora.variable)}>
+        {/* TODO: remove umami if not needed */}
         {env.NODE_ENV === 'production' && (
           <Script
             src="https://a.mancuoj.me/script.js"
