@@ -7,7 +7,7 @@ export default async function Page() {
       <Button asChild>
         <a href="https://github.com/mancuoj-collective/next-tmpl-lite">
           <span className="i-mingcute-github-line" />
-          GitHub Repo
+          GitHub
         </a>
       </Button>
       <DarkModeToggle />

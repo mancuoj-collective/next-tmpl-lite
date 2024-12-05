@@ -2,14 +2,15 @@
 
 import { Provider } from 'jotai'
 
-import { ThemeScript, UmamiScript } from '@/components/theme'
+import { ThemeScript } from '@/components/theme'
+import { Toaster } from '@/components/ui/sonner'
 
 export function AppProvider({ children }: React.PropsWithChildren) {
   return (
     <Provider>
       <ThemeScript />
-      <UmamiScript />
       {children}
+      <Toaster richColors />
     </Provider>
   )
 }
