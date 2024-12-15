@@ -1,5 +1,6 @@
 export function TwScreenIndicator() {
-  if (process.env.NODE_ENV === 'production') return null
+  if (process.env.NODE_ENV === 'production')
+    return null
 
   return (
     <div className="fixed bottom-2 right-2 z-50 text-sm font-medium">
