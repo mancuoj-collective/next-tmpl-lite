@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         sans: ['var(--font-inter)', ...fontFamily.sans],
         lora: ['var(--font-lora)', ...fontFamily.serif],
+        dm: ['var(--font-dm)', ...fontFamily.sans],
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -66,7 +67,7 @@ export default {
       preferredStrategy: 'pseudoelements',
     }),
     iconsPlugin({
-      collections: getIconCollections(['mingcute', 'simple-icons']),
+      collections: getIconCollections(['carbon', 'simple-icons']),
       scale: 1.15,
     }),
   ],
