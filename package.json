@@ -9,9 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@radix-ui/react-slot": "latest",
-    "class-variance-authority": "latest",
-    "clsx": "latest",
+    "@radix-ui/react-slot": "^1.1.0",
     "jotai": "latest",
     "jotai-dark": "latest",
     "jotai-effect": "latest",
@@ -29,6 +27,8 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "class-variance-authority": "latest",
+    "clsx": "latest",
     "eslint": "latest",
     "eslint-config-hyoban": "latest",
     "lint-staged": "latest",

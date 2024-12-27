@@ -9,7 +9,7 @@ import { Toaster } from '@/components/ui/sonner'
 export function AppProvider({ children }: React.PropsWithChildren) {
   return (
     <Provider>
-      {/* TODO: remove umami if not needed */}
+      {/* TODO: remove it if not needed */}
       {process.env.NODE_ENV === 'production' && (
         <Script
           defer
