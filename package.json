@@ -9,7 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-slot": "latest",
     "jotai": "latest",
     "jotai-dark": "latest",
     "jotai-effect": "latest",
