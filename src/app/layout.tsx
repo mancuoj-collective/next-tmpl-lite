@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { ThemeProvider } from 'next-themes'
 import { IBM_Plex_Mono, Libre_Baskerville, Lora } from 'next/font/google'
 import { cn } from '@/lib/utils'
 import '@/styles/globals.css'
@@ -35,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
           fontSans.variable,
@@ -44,7 +45,9 @@ export default function RootLayout({
           'font-sans antialiased',
         )}
       >
-        {children}
+        <ThemeProvider attribute="class" storageKey="next-tmpl-theme">
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )
