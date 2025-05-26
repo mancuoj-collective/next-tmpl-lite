@@ -1,49 +1,20 @@
 {
-  "packageManager": "pnpm@9.15.0",
   "scripts": {
-    "build": "next build",
     "dev": "next dev --turbopack",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix",
-    "prepare": "simple-git-hooks",
+    "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "@radix-ui/react-slot": "latest",
-    "jotai": "latest",
-    "jotai-dark": "latest",
-    "jotai-effect": "latest",
-    "lucide-react": "latest",
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "sonner": "latest",
-    "zod": "latest"
+    "next": "15.3.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@egoist/tailwindcss-icons": "latest",
-    "@iconify-json/carbon": "latest",
-    "@iconify-json/simple-icons": "latest",
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "class-variance-authority": "latest",
-    "clsx": "latest",
-    "eslint": "latest",
-    "eslint-config-hyoban": "latest",
-    "lint-staged": "latest",
-    "postcss": "latest",
-    "simple-git-hooks": "latest",
-    "tailwind-merge": "latest",
-    "tailwind-scrollbar": "latest",
-    "tailwindcss": "latest",
-    "tailwindcss-animate": "latest",
-    "typescript": "latest"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm exec lint-staged"
-  },
-  "lint-staged": {
-    "*": "eslint --fix"
+    "@tailwindcss/postcss": "^4.1.7",
+    "@types/node": "^20.17.50",
+    "@types/react": "^19.1.5",
+    "@types/react-dom": "^19.1.5",
+    "tailwindcss": "^4.1.7",
+    "typescript": "^5.8.3"
   }
 }
