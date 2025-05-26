@@ -1,38 +1,38 @@
-import type { Metadata } from "next";
-import { IBM_Plex_Mono, Libre_Baskerville, Lora } from "next/font/google";
-import { cn } from "@/lib/utils";
-import "@/styles/globals.css";
+import type { Metadata } from 'next'
+import { IBM_Plex_Mono, Libre_Baskerville, Lora } from 'next/font/google'
+import { cn } from '@/lib/utils'
+import '@/styles/globals.css'
 
 const fontSans = Libre_Baskerville({
-  variable: "--font-sans",
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
+  variable: '--font-sans',
+  subsets: ['latin'],
+  weight: ['400', '700'],
+})
 
 const fontMono = IBM_Plex_Mono({
-  variable: "--font-mono",
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
+  variable: '--font-mono',
+  subsets: ['latin'],
+  weight: ['400', '700'],
+})
 
 const fontSerif = Lora({
-  variable: "--font-serif",
-  subsets: ["latin"],
-});
+  variable: '--font-serif',
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
-  title: "Next",
-  description: "Next.js template lite version",
+  title: 'Next',
+  description: 'Next.js template lite version',
   icons: {
-    icon: "/next.svg",
-    shortcut: "/next.svg",
+    icon: '/next.svg',
+    shortcut: '/next.svg',
   },
-};
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
@@ -41,11 +41,11 @@ export default function RootLayout({
           fontSans.variable,
           fontMono.variable,
           fontSerif.variable,
-          "font-sans antialiased"
+          'font-sans antialiased',
         )}
       >
         {children}
       </body>
     </html>
-  );
+  )
 }
