@@ -203,7 +203,7 @@
 /* view transition */
 ::view-transition-group(root) {
   animation-duration: 0.7s;
-  animation-timing-function: var(--expo-out);
+  animation-timing-function: ease-in-out;
 }
 
 ::view-transition-new(root) {
@@ -215,6 +215,7 @@
   z-index: -1;
   animation: none;
 }
+
 .dark::view-transition-new(root) {
   animation-name: reveal-dark;
 }

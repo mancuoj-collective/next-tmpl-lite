@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { ThemeProvider } from 'next-themes'
 import { IBM_Plex_Mono, Libre_Baskerville, Lora } from 'next/font/google'
+import { Toaster } from '@/components/ui/sonner'
 import { cn } from '@/lib/utils'
 import '@/styles/globals.css'
 
@@ -45,8 +46,9 @@ export default function RootLayout({
           'font-sans antialiased',
         )}
       >
-        <ThemeProvider attribute="class" storageKey="next-tmpl-theme">
+        <ThemeProvider attribute="class" storageKey="next-tmpl-theme" disableTransitionOnChange>
           {children}
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
