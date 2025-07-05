@@ -1,19 +1,18 @@
 import type { Metadata } from 'next'
 import { ThemeProvider } from 'next-themes'
-import { Libre_Baskerville } from 'next/font/google'
+import { DM_Sans } from 'next/font/google'
 import { Toaster } from '@/components/ui/sonner'
 import { cn } from '@/lib/utils'
 import '@/styles/globals.css'
 
-const fontSans = Libre_Baskerville({
+const fontSans = DM_Sans({
   variable: '--font-sans',
   subsets: ['latin'],
-  weight: ['400', '700'],
 })
 
 export const metadata: Metadata = {
   title: 'Next',
-  description: 'Next.js template lite version',
+  description: 'Next.js starter template',
 }
 
 export default function RootLayout({
@@ -26,7 +25,7 @@ export default function RootLayout({
       <body className={cn(fontSans.variable, 'font-sans antialiased')}>
         <ThemeProvider attribute="class" storageKey="next-tmpl-theme" disableTransitionOnChange>
           {children}
-          <Toaster />
+          <Toaster richColors position="top-right" />
         </ThemeProvider>
       </body>
     </html>
